@@ -113,7 +113,7 @@ class NumerosOrcamentos(db.Model):
     idrepresentada = db.Column(db.Integer)
     representada = db.Column(db.String(255))
     data = db.Column(db.DateTime)
-    valor = db.Colum(db.Float)
+    valor = db.Column(db.Float)
 
 
 """

@@ -18,5 +18,6 @@ app.secret_key = 'secret@@@##$)(*&¨%$#@'
 '''
 
 from app.controllers import default
+from app.model import tables
 
 
