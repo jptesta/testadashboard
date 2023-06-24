@@ -116,45 +116,6 @@ class NumerosOrcamentos(db.Model):
     valor = db.Column(db.Float)
 
 
-"""
-class Outlook(db.Model):
-    identificaþÒo = db.AutoField(db_column='IdentificaþÒo', primary_key=True)  
-    primeiro_nome = db.Column(db_column='Primeiro nome', )   Field renamed to remove unsuitable characters.
-    sobrenome = db.Column(db_column='Sobrenome', )  
-    cargo = db.Column(db_column='Cargo', )  
-    empresa = db.Column(db_column='Empresa', )  
-    departamento = db.Column(db_column='Departamento', )  
-    escritorio = db.Column(db_column='Escritorio', )  
-    caixa_postal = db.Column(db_column='Caixa postal', )   Field renamed to remove unsuitable characters.
-    endereþo = db.Column(db_column='Endereþo', )  
-    cidade = db.Column(db_column='Cidade', )  
-    estado = db.Column(db_column='Estado', )  
-    cep = db.Column(db_column='CEP', )  
-    paÝs_regiÒo = db.Column(db_column='PaÝs/RegiÒo', )   Field renamed to remove unsuitable characters.
-    telefone = db.Column(db_column='Telefone', )  
-    telefone_celular = db.Column(db_column='Telefone celular', )   Field renamed to remove unsuitable characters.
-    n·mero_do_pager = db.Column(db_column='N·mero do pager', )   Field renamed to remove unsuitable characters.
-    telefone_residencial2 = db.Column(db_column='Telefone residencial2', )   Field renamed to remove unsuitable characters.
-    n·mero_de_telefone_do_assistente = db.Column(db_column='N·mero de telefone do assistente', )   Field renamed to remove unsuitable characters.
-    fax_comercial = db.Column(db_column='Fax comercial', )   Field renamed to remove unsuitable characters.
-    fax_residencial = db.Column(db_column='Fax residencial', )   Field renamed to remove unsuitable characters.
-    outro_fax = db.Column(db_column='Outro fax', )   Field renamed to remove unsuitable characters.
-    n·mero_de_telex = db.Column(db_column='N·mero de telex', )   Field renamed to remove unsuitable characters.
-    nome_para_exibiþÒo = db.Column(db_column='Nome para exibiþÒo', )   Field renamed to remove unsuitable characters.
-    tipo_de_correio_elet = db.Column(db_column='Tipo de correio elet', )   Field renamed to remove unsuitable characters.
-    endereþo_de_email = db.Column(db_column='Endereþo de email', )   Field renamed to remove unsuitable characters.
-    conta = db.Column(db_column='Conta', )  
-    assistente = db.Column(db_column='Assistente', )  
-    enviar_no_formato_rich_text = db.IntegerField(db_column='Enviar no formato rich text', blank=True, null=True)   Field renamed to remove unsuitable characters.
-    principal = db.Column(db_column='Principal', )  
-    assunto_normalizado = db.Column(db_column='Assunto normalizado', )   Field renamed to remove unsuitable characters.
-
-    class Meta:
-        managed = False
-        db_table = 'outlook'
-"""
-
-
 class Usuarios(db.Model):
     __tablename__ = "usuarios"
     idusuarios = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -193,6 +154,8 @@ class Visitas(db.Model):
     datadavisita = db.Column(db.DateTime)
     motivovisita = db.Column(db.String(255))
 
+
+
 '''
 class Pedidos(db.Model):
     idpedido = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -211,4 +174,41 @@ class Pedidos(db.Model):
     vendedor = db.Column(db_column='Vendedor', )  
     idtransportadora = db.IntegerField(blank=True, null=True)
     transportadora = db.Column(db_column='Transportadora', )  
+
+
+class Outlook(db.Model):
+    identificaþÒo = db.AutoField(db_column='IdentificaþÒo', primary_key=True)  
+    primeiro_nome = db.Column(db_column='Primeiro nome', )   Field renamed to remove unsuitable characters.
+    sobrenome = db.Column(db_column='Sobrenome', )  
+    cargo = db.Column(db_column='Cargo', )  
+    empresa = db.Column(db_column='Empresa', )  
+    departamento = db.Column(db_column='Departamento', )  
+    escritorio = db.Column(db_column='Escritorio', )  
+    caixa_postal = db.Column(db_column='Caixa postal', )   Field renamed to remove unsuitable characters.
+    endereþo = db.Column(db_column='Endereþo', )  
+    cidade = db.Column(db_column='Cidade', )  
+    estado = db.Column(db_column='Estado', )  
+    cep = db.Column(db_column='CEP', )  
+    paÝs_regiÒo = db.Column(db_column='PaÝs/RegiÒo', )   Field renamed to remove unsuitable characters.
+    telefone = db.Column(db_column='Telefone', )  
+    telefone_celular = db.Column(db_column='Telefone celular', )   Field renamed to remove unsuitable characters.
+    n·mero_do_pager = db.Column(db_column='N·mero do pager', )   Field renamed to remove unsuitable characters.
+    telefone_residencial2 = db.Column(db_column='Telefone residencial2', )   Field renamed to remove unsuitable characters.
+    n·mero_de_telefone_do_assistente = db.Column(db_column='N·mero de telefone do assistente', )   Field renamed to remove unsuitable characters.
+    fax_comercial = db.Column(db_column='Fax comercial', )   Field renamed to remove unsuitable characters.
+    fax_residencial = db.Column(db_column='Fax residencial', )   Field renamed to remove unsuitable characters.
+    outro_fax = db.Column(db_column='Outro fax', )   Field renamed to remove unsuitable characters.
+    n·mero_de_telex = db.Column(db_column='N·mero de telex', )   Field renamed to remove unsuitable characters.
+    nome_para_exibiþÒo = db.Column(db_column='Nome para exibiþÒo', )   Field renamed to remove unsuitable characters.
+    tipo_de_correio_elet = db.Column(db_column='Tipo de correio elet', )   Field renamed to remove unsuitable characters.
+    endereþo_de_email = db.Column(db_column='Endereþo de email', )   Field renamed to remove unsuitable characters.
+    conta = db.Column(db_column='Conta', )  
+    assistente = db.Column(db_column='Assistente', )  
+    enviar_no_formato_rich_text = db.IntegerField(db_column='Enviar no formato rich text', blank=True, null=True)   Field renamed to remove unsuitable characters.
+    principal = db.Column(db_column='Principal', )  
+    assunto_normalizado = db.Column(db_column='Assunto normalizado', )   Field renamed to remove unsuitable characters.
+
+    class Meta:
+        managed = False
+        db_table = 'outlook'
 '''
