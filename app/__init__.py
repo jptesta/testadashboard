@@ -6,13 +6,14 @@ from app.transportadoras.transportadoras import transportadora_blueprint
 
 app = Flask(__name__)
 
+db = SQLAlchemy()
+migrate = Migrate(app, db)
+
 app.config['SECRET_KEY'] = '1234567890OIUYTREWQASDFGHJK'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///testa.db'
 
 app.register_blueprint(transportadora_blueprint)
 
-db = SQLAlchemy()
-migrate = Migrate(app, db)
 
 '''
 ou
