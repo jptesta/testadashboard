@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template#, request, flash, redirect, url_for
-#from app import db
+#from app.database import db
 #from app.model.tables import Transportadoras
 
 
@@ -9,6 +9,7 @@ transportadora_blueprint = Blueprint('transportadoras', __name__, template_folde
 # CADASTRO DE TRANSPORTADORA
 @transportadora_blueprint.route('/transportadoras', methods=['GET', 'POST'])
 def transportadora():
+    #my_data = db.session.query(Transportadoras).all()
     return render_template('transportadoras.html')
 
 '''
