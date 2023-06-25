@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template#, request, flash, redirect, url_for
-#from app.database import db
+#from app import db
 #from app.model.tables import Transportadoras
 
 
